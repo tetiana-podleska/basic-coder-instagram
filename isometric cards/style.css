@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #008080;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+ul li {
+    width: 240px;
+    height: 280px;
+    display: block;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    transform-origin: bottom center;
+    transform: rotate(10deg) skew(-30deg);
+    transition: .5s;
+}
+
+ul li span {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    line-height: 200px;
+    color: #cccccc;
+}
+
+ul li:nth-child(1) {
+    transform: rotate(10deg) skew(-30deg) translate(15px, 15px);
+}
+
+ul li:nth-child(2) {
+    transform: rotate(10deg) skew(-30deg) translate(0px, 0px);
+}
+
+ul li:nth-child(3) {
+    transform: rotate(10deg) skew(-30deg) translate(-15px, -15px);
+}
+
+ul:hover li:nth-child(1) {
+    transform: rotate(5deg) skew(0deg) translate(200px, 0);
+}
+
+ul:hover li:nth-child(2) {
+    transform: rotate(0deg) skew(0deg) translate(0, 0);
+}
+
+ul:hover li:nth-child(3) {
+    transform: rotate(-5deg) skew(0deg) translate(-200px, 0);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    background: #2626;
+    transition: .5s;
+}
+
+ul li:hover::before {
+    left: 50%;
+}
+
+ul li:hover::after {
+    right: 50%;
+}
