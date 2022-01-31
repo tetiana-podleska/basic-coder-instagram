@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 25px 0;
+    background: rgb(10,10,10);
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background: #111111;
+}
+
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menuList {
+    display: inline-flex;
+}
+
+.navbar .logo a {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menuList li {
+    list-style: none;
+}
+
+.menuList li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menuList li a:hover {
+    color: cyan;
+}
+
+.banner {
+    height: 100vh;
+    background: url("img/wr960.jpeg") no-repeat center fixed;
+    background-size: cover;
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.about .title {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    display: none;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.icon .cancelBtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+@media (max-width: 900px) {
+    body.disabledScroll{
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon .hide {
+        display: none;
+    }
+
+    .navbar .menuList {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        max-width: 400px;
+        display: block;
+        text-align: center;
+        padding: 40px 0;
+        background: #222222;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menuList li {
+        margin-top: 45px;
+    }
+
+    .navbar .menuList.active {
+        left: 0;
+    }
+
+    .navbar .menuList li a {
+        font-size: 23px;
+    }
+}
