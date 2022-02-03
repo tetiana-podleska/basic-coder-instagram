@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+    />
+    <title>Custom captcha</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>Captcha</header>
+    <div class="captchaArea">
+        <div class="captchaImg">
+            <img src="img/concrete.jpg" alt="concrete">
+            <span class="captcha"></span>
+        </div>
+        <button class="reloadBtn">
+            <i class="fa fa-redo"></i>
+        </button>
+    </div>
+    <form action="#" class="inputArea">
+        <input type="text" placeholder="Enter captcha" maxlength="6" required>
+        <button class="checkBtn">Check</button>
+    </form>
+    <div class="statusTxt"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
