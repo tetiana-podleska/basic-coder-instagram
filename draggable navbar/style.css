@@ -89,9 +89,9 @@ body {
 
 .nav ul li a {
     position: relative;
-    display: block;
+    /*display: block;*/
     width: 100%;
-    /*display: flex;*/
+    display: flex;
     text-decoration: none;
     color: #154367;
 }
