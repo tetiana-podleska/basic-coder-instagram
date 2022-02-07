@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Price slider</title>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>Price range</h2>
+        <p>Use slider or enter min and max price</p>
+    </header>
+    <div class="priceInput">
+        <div class="field">
+            <span>Min</span>
+            <input type="number" class="inputMin" value="2500">
+        </div>
+        <div class="separator">-</div>
+        <div class="field">
+            <span>Max</span>
+            <input type="number" class="inputMax" value="7500">
+        </div>
+    </div>
+    <div class="slider">
+        <div class="progress"></div>
+    </div>
+    <div class="rangeInput">
+        <input type="range" class="rangeMin" min="0" max="10000" value="2500" step="100">
+        <input type="range" class="rangeMax" min="0" max="10000" value="7500" step="100">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
