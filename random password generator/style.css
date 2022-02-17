@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #153365;
+}
+
+.inputBox {
+    position: relative;
+    width: 420px;
+    padding: 40px;
+    background: #041837;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+.inputBox h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.inputBox input {
+    position: relative;
+    width: 90%;
+    height: 60px;
+    margin: 15px 0 30px;
+    padding: 0 10px;
+    background: #153365;
+    outline: none;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: rgb(190, 190, 190);
+    box-sizing: border-box;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+.inputBox input::placeholder {
+    letter-spacing: 0;
+}
+
+.inputBox #btn {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    background: #4e0ba6;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputBox #btn:hover {
+    background: rgb(80, 8, 90);
+}
