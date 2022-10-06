@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 40px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.accordion {
+    width: 400px;
+}
+
+.accordion .box {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .box .label {
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(45deg, #1cfdea, #4959eb);
+    color: #fff;
+    cursor: pointer;
+}
+
+.accordion .box .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .box.active .label::before {
+    content: '-';
+}
+
+.accordion .box .content {
+    position: relative;
+    height: 0;
+    background: #ff7300;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.accordion .box.active .content {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerBox {
+    position: relative;
+    width: 100%;
+}
+
+.label2 {
+    position: relative;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #38082e;
+    background: #4a1aa3;
+    color: #fff;
+    cursor: pointer;
+}
+
+#con1 {
+    display: flex;
+}
+
+#con2 {
+    display: none;
+}
+
+#optionA {
+    display: none;
+}
+
+#optionB {
+    display: none;
+}
+
+#optionC {
+    display: none;
+}
+
+#optionD {
+    display: none;
+}
+
+#optionE {
+    display: none;
+}
+
+#optionF {
+    display: none;
+}
+
+#optionG {
+    display: none;
+}
+
+#optionH {
+    display: none;
+}
+
+#optionI {
+    display: none;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: rgb(212, 212, 212);
+    cursor: pointer;
+}

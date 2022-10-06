@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: teal;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cal {
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+form .result {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.result input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+    color: 303030;
+    pointer-events: none;
+}
+
+form .buttons {
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.buttons input[type="button"] {
+    width: 56px;
+    height: 56px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 23px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: 333;
+}
+
+.buttons input[type="button"]:focus {
+    color: #000;
+    transform: scale(0.9);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.05);
+}
