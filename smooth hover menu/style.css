@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #008080;
+}
+
+.menu {
+    width: 420px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25);
+}
+
+.menu ul {
+    display: flex;
+    width: 350px;
+}
+
+.menu ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.menu ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+}
+
+.menu ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #008080;
+    transition: 0.5s;
+}
+
+.menu ul li.active a .icon {
+    transform: translateY(-35px);
+}
+
+.menu ul li a .text {
+    position: absolute;
+    color: #008080;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.menu ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    backdrop-filter: blur(15px);
+    border-radius: 50%;
+    border: 6px solid #008080;
+    transition: 0.5s;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 #008080;
+}
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 #008080;
+}
+
+.menu ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+.menu ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+.menu ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+.menu ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+.menu ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(70px * 4));
+}
