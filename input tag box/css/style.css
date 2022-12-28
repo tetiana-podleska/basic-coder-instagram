@@ -81,3 +81,27 @@ body::before {
   background-color: #dfdfdf;
   cursor: pointer;
 }
+
+.content ul input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.wrapper .details {
+  justify-content: space-between;
+}
+
+.details button {
+  border: none;
+  outline: none;
+  padding: 9px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  mix-blend-mode: multiply;
+  color: #fff;
+  background-color: #b507ff;
+  cursor: pointer;
+}
