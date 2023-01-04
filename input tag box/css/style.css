@@ -27,6 +27,7 @@ body::before {
   width: 490px;
   border-radius: 10px;
   padding: 18px 25px 20px;
+  background-color: #fff;
   box-shadow: 0 0 0 2px #fffff5, 0 0 0 22px #fff, 0 0 50px #fff, 0 0 450px #fff;
   z-index: 10;
 }
